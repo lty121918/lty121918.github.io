@@ -1,5 +1,5 @@
 ---
-title: theme啦啦啦啦啦啦啦
+title: theme
 date: 2020-05-27
 ---
 

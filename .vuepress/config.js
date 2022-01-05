@@ -1,13 +1,14 @@
 module.exports = {
-  "title": "lty’blog",
+  "title": "",
   "description": "",
   "dest": "public",
+  "base":"/blog/",
   "head": [
     [
       "link",
       {
         "rel": "icon",
-        // "href": "/favicon.ico"
+        "href": "/favicon.ico"
       }
     ],
     [
@@ -22,38 +23,34 @@ module.exports = {
   "themeConfig": {
     "nav": [
       {
-        "text": "首页",
+        "text": "Home",
         "link": "/",
-        // "icon": "reco-home"
+        "icon": "reco-home"
       },
       {
-        "text": "时间线",
+        "text": "TimeLine",
         "link": "/timeline/",
-        // "icon": "reco-date"
+        "icon": "reco-date"
       },
-      //{
-      //   "text": "Docs",
-      //   "icon": "reco-message",
-      //   "items": [
-      //     {
-      //       "text": "vuepress-reco",
-      //       "link": "/docs/theme-reco/"
-      //     }
-      //   ]
-      // },
       {
-        "text": "联系方式",
-        // "icon": "reco-message",
+        "text": "Docs",
+        "icon": "reco-message",
         "items": [
           {
-            "text": "QQ:1219186777",
-            "icon": "reco-qq"
-          },
+            "text": "vuepress-reco",
+            "link": "/docs/theme-reco/"
+          }
+        ]
+      },
+      {
+        "text": "Contact",
+        "icon": "reco-message",
+        "items": [
           {
-            "text": "Gitee",
-            "link": "https://gitee.com/ekzodia_lty",
-            "icon": "reco-mayun"
-          },
+            "text": "GitHub",
+            "link": "https://github.com/recoluan",
+            "icon": "reco-github"
+          }
         ]
       }
     ],
@@ -69,11 +66,11 @@ module.exports = {
     "blogConfig": {
       "category": {
         "location": 2,
-        "text": "分类"
+        "text": "Category"
       },
       "tag": {
         "location": 3,
-        "text": "标签"
+        "text": "Tag"
       }
     },
     "friendLink": [
@@ -84,8 +81,8 @@ module.exports = {
         "link": "https://www.recoluan.com"
       },
       {
-        "title": "肘子的前端博客",
-        // "desc": "A simple and beautiful vuepress Blog & Doc theme.",
+        "title": "vuepress-theme-reco",
+        "desc": "A simple and beautiful vuepress Blog & Doc theme.",
         "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
         "link": "https://vuepress-theme-reco.recoluan.com"
       }
@@ -101,5 +98,5 @@ module.exports = {
   },
   "markdown": {
     "lineNumbers": true
-  },
+  }
 }
