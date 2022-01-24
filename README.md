@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+heroText: LTY的博客
+tagline: 偶尔记录一下
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',

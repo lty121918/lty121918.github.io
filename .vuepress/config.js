@@ -39,6 +39,14 @@ module.exports = {
           {
             "text": "vuepress-reco",
             "link": "/docs/theme-reco/"
+          },
+          {
+            "text": "JavaScript",
+            "link": "/docs/JavaScript"
+          },
+          {
+            "text": "网络相关",
+            "link": "/docs/Network/"
           }
         ]
       },
