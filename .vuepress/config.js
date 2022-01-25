@@ -23,39 +23,22 @@ module.exports = {
     "themeConfig": {
         //导航栏
         "nav": [{
-                "text": "Home",
+                "text": "主页",
                 "link": "/",
                 "icon": "reco-home"
             },
             {
-                "text": "TimeLine",
+                "text": "时间线",
                 "link": "/timeline/",
                 "icon": "reco-date"
             },
             {
-                "text": "Docs",
+                "text": "关于",
                 "icon": "reco-message",
                 "items": [{
-                        "text": "vuepress-reco",
-                        "link": "/docs/theme-reco/"
-                    },
-                    {
-                        "text": "JavaScript",
-                        "link": "/docs/JavaScript/"
-                    },
-                    {
-                        "text": "网络相关",
-                        "link": "/docs/Network/"
-                    }
-                ]
-            },
-            {
-                "text": "Contact",
-                "icon": "reco-message",
-                "items": [{
-                    "text": "GitHub",
-                    "link": "https://github.com/recoluan",
-                    "icon": "reco-github"
+                    "text": "Gitee",
+                    "link": "https://gitee.com/ekzodia_lty",
+                    "icon": "reco-mayun"
                 }]
             }
         ],
@@ -68,38 +51,26 @@ module.exports = {
                 "api"
             ]
         },
+        //指定类型为博客
         "type": "blog",
         "blogConfig": {
             "category": {
                 "location": 2,
-                "text": "Category"
+                "text": "分类"
             },
             "tag": {
                 "location": 3,
-                "text": "Tag"
+                "text": "标签"
             }
         },
-        "friendLink": [{
-                "title": "午后南杂",
-                "desc": "Enjoy when you can, and endure when you must.",
-                "email": "1156743527@qq.com",
-                "link": "https://www.recoluan.com"
-            },
-            {
-                "title": "vuepress-theme-reco",
-                "desc": "A simple and beautiful vuepress Blog & Doc theme.",
-                "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-                "link": "https://vuepress-theme-reco.recoluan.com"
-            }
-        ],
         "logo": "/logo.png",
         "search": true,
         "searchMaxSuggestions": 10,
         "lastUpdated": "Last Updated",
-        "author": "",
-        "authorAvatar": "/avatar.png",
+        "author": "lty",
+        "authorAvatar": "/avatar.jpg",
         "record": "xxxx",
-        "startYear": "2017"
+        "startYear": "2022"
     },
     "markdown": {
         "lineNumbers": true
