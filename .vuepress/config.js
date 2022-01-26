@@ -3,7 +3,7 @@ module.exports = {
     "description": "", //博客的描述
     "dest": "public", //博客部署时输出的文件夹
     "base": "/blog/",
-    "head": [
+    "head": [  
         [
             "link",
             {
