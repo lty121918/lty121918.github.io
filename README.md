@@ -1,16 +1,17 @@
 ---
 home: true
-heroText: LTY的博客
-tagline: 偶尔记录一下
-# heroImage: /hero.png
-# heroImageStyle: {
-#   maxWidth: '600px',
-#   width: '100%',
-#   display: block,
-#   margin: '9rem auto 2rem',
-#   background: '#fff',
-#   borderRadius: '1rem',
-# }
+heroText: 
+tagline: 
+heroImage: back1.gif
+heroImageStyle: {
+  # maxWidth: '100px',
+  width: '80%',
+  display: block,
+  margin: '5rem auto 2rem',
+  background: 'transparent',
+  borderRadius: '1rem',
+}
+bgImage: '/bg1.jpeg'
 bgImageStyle: {
   height: '450px'
 }
