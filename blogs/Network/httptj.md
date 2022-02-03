@@ -9,9 +9,13 @@ categories:
 ---
 
 
+## TCP/IP协议族按层次分为以下四层
+
+![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/20220202214600.png)
+
 ## 确保可靠性的TCP协议
 
-**按层次分，TCP位于传输层，提供可靠的字节流服务**
+**按层次分，TCP位于传输层，提供可靠的字节流服务 **
 
 >  所谓字节流服务是指，为了方便传输，将大块的数据分割成以报文段为单位的数据包进行管理。
 
@@ -29,7 +33,7 @@ categories:
 
 若在握手过程中某个阶段莫名中断，TCP协议会再次以相同的顺序发送相同的数据包。
 
-![image-20220110234446209](C:\Users\12191\AppData\Roaming\Typora\typora-user-images\image-20220110234446209.png)
+![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/image-20220110234446209.png)
 
 除了三次握手，TCP协议还有其他各种手段来保证通信的可靠性。
 
@@ -77,7 +81,7 @@ TRACE方法是让Web服务器端将之前的请求通信环回给客户的方法
 
 CONNECT方法要求在与代理服务器通信时建立隧道，实现用隧道协议进行TCP通信。主要使用SSL安全套接层和TLS传输层安全协议把通信内容加密后经网络隧道传输。
 
-![image-20220112230158080](C:\Users\12191\AppData\Roaming\Typora\typora-user-images\image-20220112230158080.png)
+![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/image-20220112230158080.png)
 
 
 
@@ -85,7 +89,7 @@ CONNECT方法要求在与代理服务器通信时建立隧道，实现用隧道�
 
 ### 状态码的类别
 
-![image-20220115182031227](C:\Users\12191\AppData\Roaming\Typora\typora-user-images\image-20220115182031227.png)
+![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/image-20220115182031227.png)
 
 ### 2XX 成功
 
@@ -145,31 +149,97 @@ CONNECT方法要求在与代理服务器通信时建立隧道，实现用隧道�
 
 指请求报文和响应报文双方都会使用的首部。
 
-![image-20220122135441449](C:\Users\12191\AppData\Roaming\Typora\typora-user-images\image-20220122135441449.png)
+![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/image-20220122135441449.png)
 
 ### 请求首部字段
 
-![image-20220122135453783](C:\Users\12191\AppData\Roaming\Typora\typora-user-images\image-20220122135453783.png)
+![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/image-20220122135453783.png)
 
 ### 响应首部字段
 
-![image-20220122141312126](C:\Users\12191\AppData\Roaming\Typora\typora-user-images\image-20220122141312126.png)
+![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/image-20220122141312126.png)
 
 ### 实体首部字段
 
-![image-20220122141333624](C:\Users\12191\AppData\Roaming\Typora\typora-user-images\image-20220122141333624.png)
+![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/image-20220122141333624.png)
 
 
 
-## HTTP加密
+## HTTPS
 
 HTTP协议中没有加密机制，但可以通过SSL安全套接层或TLS安全传输协议的组合使用，加密HTTP的通信内容。
 
 与SSL组合使用的HTTP被称为HTTPS（HTTP Secure，超文本传输安全协议）或HTTP over SSL。
 
+**HTTPS也存在一些问题，就是使用SSL的时候，速度会比HTTP慢，SSL的慢分两种，一种是指通信慢。另一种是指由于大量消耗CPU及内存等资源，导致处理速度变慢。**
+
+不一直使用HTTPS的原因是：加密通信会消耗更多的CPU及内存资源，另一方面是节省购买证书的开销。
 
 
 
+## 基于HTTP的功能追加协议
 
+### 基于HTTP的协议
 
+HTTP功能上的不足可以创建一套全新的协议来补充。可是目前基于
+HTTP的Web浏览器的使用环境已经遍布全球，因此无法完全抛弃HTTP。
 
+**HTTP标准的瓶颈：**
+
++ 一条连接上只可发送一个请求
++ 请求只能从客户端开始。客户端不可以接收除响应以外的指令。
++ 请求/响应首部未经压缩就发送。首部信息越多延迟越大。
++ 发送冗长的首部。每次互相发送的的相同首部造成的浪费较多。
++ 可任意选择数据压缩格式。非强制压缩发送。
+
+### 消除HTTP瓶颈的SPDY
+
+开发目标：解决HTTP的性能瓶颈，缩短Web页面的加载时间。
+（50%）
+
+SPDY没有完全改写HTTP协议，而是在TCP/IP的应用层与运输层之间通过新加会话层的形式运作。同时，考虑到安全性问题，sPDY规定通信中使用SSL。 
+
+使用SPDY之后，HTTP协议额外获得以下功能：
+
+1. 多路复用流
+2. 赋予请求优先级
+3. 压缩HTTP首部
+4. 推送功能
+5. 服务器提示功能
+
+### 使用浏览器进行全双工通信的WebSocket
+
+**WebSocket，即Web浏览器与Web服务器之间全双工通信标准。**
+
+一旦Web服务器与客户端之间建立起WebSocket协议进行通信连接，之后所有的通信都依靠之歌专用协议进行。通信过程中可互相发送JSON、XML、HTML或图片等任意格式的数据。
+
+**WebSocket协议的主要特点：**
+
++ 推送功能
+
+  服务器可以直接发送数据，而不必等待而客户端的请求。
+
++ 减少通信量
+
+  只要建立起WebSocket连接，就希望一直保持连接状态。而且WebSocket的首部信息很小，通信量也相应减少。
+
+### HTTP/2.0
+
+书中时间是12年，2.0尚未正式发布。
+
+目标：改善用户在使用Web时的速度体验。
+
+### Web服务器管理文件的WebDAV
+
+基于万维往的分布式创作和版本控制，是一个可对Web服务器上的内容直接进行文件复制、编辑等操作的分布式文件系统。作为扩展HTTP/1.1的协议定义在RFC4918。
+
+具有创建文件、删除文件、文件创建者管理、文件编辑过程中禁止其他用户内容覆盖的加锁功能，以及对文件内容修改的版本控制功能。   
+
+## Web的攻击技术
+
+对Web应用的攻击模式有两种：
+
++ 主动攻击：SQL注入攻击和OS命令注入攻击
++ 被动攻击：跨站脚本攻击XXS、跨站请求伪造CSRF、HTTP首部注入攻击
+
+其他攻击：会话劫持、目录遍历攻击、邮件首部注入攻击、会话固定攻击、点击攻击、DOS攻击
