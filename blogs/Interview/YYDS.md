@@ -1,6 +1,6 @@
 ---
 title: 关于比YYDS更YYDS的互联网缩写
-date: 2021-09-21
+date: 2022-02-03
 tags:
  - 感想
 sidebar: 'auto'
