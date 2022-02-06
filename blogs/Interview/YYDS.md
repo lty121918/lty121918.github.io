@@ -1,6 +1,6 @@
 ---
-title: 关于比YYDS更YYDS的互联网缩写
-date: 2022-02-03
+title: 关于比YYDS更棒的缩写
+date: 2022-01-03
 tags:
  - 感想
 sidebar: 'auto'
@@ -9,7 +9,7 @@ categories:
 ---
 
 
-> 上网冲浪的时候看到的，一开始不懂啥意思，百度之后记录一下。
+> 经常看到别人的对话里带一些英语缩写，一开始不懂啥意思，百度之后记录一下。
 
 
 
@@ -33,11 +33,11 @@ OA：应该是网上那种评测，测试一下耐心
 
 LC：LeetCode网站，应用场景：“大佬你LC多少题啦！”
 
-AC：代码运行通过（Accepted），应用场景：“这道题这么简单，前台妹子都能AC”。
+AC：代码运行通过（Accepted）。
 
 ![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/20220203205807.png)
 
-一些入职以后的黑话，码住学习！！！
+其他的一些黑话，码住学习！！！
 
 [互联网黑话大全，你get到了吗？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/367488861)
 

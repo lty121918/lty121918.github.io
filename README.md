@@ -1,21 +1,23 @@
 ---
 home: true
-heroText: 
+heroText:
 tagline: 
 heroImage: back1.gif
 heroImageStyle: {
-  # maxWidth: '100px',
-  width: '80%',
+  width: 100px,
+  right: 20px,
+  top: 365px,
+  position: absolute,
   display: block,
-  margin: '5rem auto 2rem',
+  margin: 0,
   background: 'transparent',
   borderRadius: '1rem',
 }
-bgImage: '/bg1.jpeg'
+bgImage: '/bg6.jpg'
 bgImageStyle: {
   height: '450px'
 }
-isShowTitleInHome: false
+isShowTitleInHome: true
 actionText: Guide
 actionLink: /views/other/guide
 features:
