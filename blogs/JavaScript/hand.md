@@ -116,3 +116,29 @@ function unique(arr) {
 }
 ```
 
+## 防抖
+
+防止抖动，啥时候停了再执行下一步。
+
+应用场景：一个搜索输入框，输入停止之后，再触发搜索。
+
+```js
+function debounce(fn, delay = 200) {
+    let timer = 0;
+
+    return function () {
+        if (timer) {
+            clearTimeout(timer)
+        }
+        timer = setTimeout(() => {
+            fn.apply(this, arguments)
+            timer = 0
+        }, delay);
+    }
+}
+```
+
+
+
+
+
