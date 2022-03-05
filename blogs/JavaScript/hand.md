@@ -138,6 +138,23 @@ function debounce(fn, delay = 200) {
 }
 ```
 
+## 节流
+
+```js
+function throttle(fn, delay = 100) {
+  let timer = 0;
+
+  return function () {
+    if (timer) return;
+
+    timer = setTimeout(() => {
+      fn.apply(this, arguments)
+      timer = 0
+    }, delay);
+  }
+}
+```
+
 
 
 
