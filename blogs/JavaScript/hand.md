@@ -155,6 +155,20 @@ function throttle(fn, delay = 100) {
 }
 ```
 
+## 反转字符串
+
+```js
+function reverseString(str) {
+  var array = [];
+  array = str.split('');
+  array = array.reverse();
+  str = array.join('');
+  return str;
+}
+
+reverseString("hello");
+```
+
 
 
 
