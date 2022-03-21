@@ -11,5 +11,8 @@
     "vuepress-theme-reco": "1.6.10",
     "watchpack": "^2.3.1"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "vuepress-plugin-comment": "^0.7.3"
+  }
 }

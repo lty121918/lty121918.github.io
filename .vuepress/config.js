@@ -21,6 +21,10 @@ module.exports = {
     ],
     "theme": "reco", //vuepress挂载的主题
     "themeConfig": {
+        valineConfig: {
+            appId: 'B2DAwfEL9Ppmx41WC7wOH5iv-gzGzoHsz',// your appId
+            appKey: 'BX9SuNVTB3yyIzbNqSpJIoMR', // your appKey
+          },
         //导航栏
         "nav": [{
                 "text": "主页",
@@ -40,7 +44,7 @@ module.exports = {
                     "link": "https://gitee.com/ekzodia_lty",
                     "icon": "reco-mayun"
                 }]
-            }
+            },
         ],
         //侧边栏
         "sidebar": {
