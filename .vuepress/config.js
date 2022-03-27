@@ -1,5 +1,5 @@
 module.exports = {
-    "title": "", //博客的标题
+    "title": "lty的博客", //博客的标题
     "description": "山重水复疑无路，柳暗花明又一村", //博客的描述
     "dest": "public", //博客部署时输出的文件夹
     "base": "/blog/",
