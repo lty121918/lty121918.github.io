@@ -18,6 +18,6 @@ git commit -m 'deploy'
 
 git push -f origin  master:master
 
-cd ..
+cd -
 
-tcb hosting:deploy public -e blog-9g8lgnuke4603ff9
+# tcb hosting:deploy public -e blog-9g8lgnuke4603ff9
