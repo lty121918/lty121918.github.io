@@ -53,7 +53,7 @@ UDP 协议只是数据报文的搬运工，不保证有序且不丢失的传递�
 
 #### 四次挥手过程
 
-![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/20220204233449.png)
+![](https://.com/ekzodia_lty/blog-image/raw/master/img/20220204233449.png)
 
 ## HTTP/2.0
 
@@ -93,7 +93,7 @@ bilibili、qq、baidu
 
 + 一旦该浏览器收到来自DNS的IP地址，就可以向该IP地址定位的HTTP服务器发起TCP连接
 
-![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/20220204234852.png)
+![](https://.com/ekzodia_lty/blog-image/raw/master/img/20220204234852.png)
 
 ## CDN
 

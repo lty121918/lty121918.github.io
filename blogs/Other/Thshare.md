@@ -51,7 +51,7 @@ axios
 
 执行这段代码,在控制台查看数据,我们就可以得到:
 
-![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/20220131173637.png)
+![](https://.com/ekzodia_lty/blog-image/raw/master/img/20220131173637.png)
 
 这样使用axios进行了一次简单的请求.
 

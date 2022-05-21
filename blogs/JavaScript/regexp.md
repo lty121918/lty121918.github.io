@@ -128,7 +128,7 @@ console.log(rg.test('1'));//false
 
 ## 常见的简写形式
 
-![](https://gitee.com/ekzodia_lty/blog-image/raw/master/img/20220226223735.png)
+![](https://.com/ekzodia_lty/blog-image/raw/master/img/20220226223735.png)
 
 
 
