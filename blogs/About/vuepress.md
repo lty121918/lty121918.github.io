@@ -43,3 +43,6 @@ categories:
 
 [PicGo + Gitee(码云)实现markdown图床 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/102594554)
 
+[手把手教你用Typora自动上传到picgo图床【教程与排坑】 - 简书 (jianshu.com)](https://www.jianshu.com/p/4cd14d4ceb1d)
+
+[Typora+PicGo+GitHub插入图片自动上传图床_正则化的博客-CSDN博客_picgo上传github](https://blog.csdn.net/weixin_41519463/article/details/121792184)

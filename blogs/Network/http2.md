@@ -53,7 +53,7 @@ UDP 协议只是数据报文的搬运工，不保证有序且不丢失的传递�
 
 #### 四次挥手过程
 
-![](https://.com/ekzodia_lty/blog-image/raw/master/img/20220204233449.png)
+![](https://.com/lty121918/blog-image/raw/master/img/20220204233449.png)
 
 ## HTTP/2.0
 
